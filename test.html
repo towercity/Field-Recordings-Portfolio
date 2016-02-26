@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio | Matthew Nerger</title>
+    
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="framework/bootstrap/css/bootstrap.min.css">
+    <script src="framework/js/jquery-1.12.0.min.js"></script>
+    <script src="framework/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+    <!--CSS sheets-->
+	<link rel="stylesheet" href="framework/css/main.css">
+    <link rel="stylesheet" media="(max-width:976px)" href="framework/css/mobile.css">
+    <link rel="stylesheet" media="(min-width:616px)" href="framework/css/medium.css">
+    <link rel="stylesheet" media="(min-width:977px)" href="framework/css/large.css">
+</head>
+<body>   
+    <!--Main Grid-->
+	<div class="container">
+        
+        <!--Header-->
+		<header class="heading row">
+			<div class="col-md-3"><img src="images/logo.jpg" alt="logo"></div>
+			<div class="col-md-9">
+				<h1 class="text-right">Matthew Nerger</h1>
+                <p class="text-right">Sound Collage Artist</p>
+			</div>
+		</header>
+        
+        <!--Splash-->
+		<div class="splash row">
+            <div class="col-md-12">                
+                <img src="images/focus.jpg" alt="Splash image" class="img-responsive">
+            </div>
+		</div>
+                
+        
+        <!--Work samples-->
+        <div class="row">
+            <div class="col-md-12 samples-heading"><h2>Featured Work</h2></div>
+		</div>
+                
+        <article class="row samples">
+            <!--screenshots-->
+            <!--der Mond-->
+            <div class="col-md-4" id="der-mond-img">
+                <img src="images/screen01.jpg" alt="der Mond (ii)" class="img-responsive">
+                <!--Tooltip to explain link-->
+                <a href="https://popularmusic.bandcamp.com/album/der-mond-ii" data-toggle="tooltip" data-placement="bottom" title="View der Mond (ii) on Bandcamp">
+                    <h3>der Mond (ii)</h3>
+                </a> 
+            </div>
+            
+            <!--Popular Music-->
+            <div class="col-md-4" id="popular-music-img">
+                <img src="images/screen02.jpg" alt="Popular Music 1 & 2" class="img-responsive">
+                <!--Tooltip to explain link-->
+                <a href="https://popularmusic.bandcamp.com/album/popular-music-1-2" data-toggle="tooltip" data-placement="bottom" title="View Popular Music 1 & 2 on Bandcamp">
+                    <h3>Popular Music 1 & 2</h3>
+                </a>
+            </div>
+            
+            <!--FSU-->
+            <div class="col-md-4" id="fsu-img">
+                <img src="images/screen03.jpg" alt="Florida State University 2011-2013" class="img-responsive">
+                <!--Tooltip to explain link-->
+                <a href="https://popularmusic.bandcamp.com/album/popular-music-vol-6-florida-state-university-2011-2013" data-toggle="tooltip" data-placement="bottom" title="View Florida State University 2011-2013 on Bandcamp">
+                    <h3>florida state university 2011-2013</h3>
+                </a>
+            </div>
+            
+            <!--descriptions-->
+            <!--der Mond-->
+            <div class="description" id="der-mond-description">
+                <p>A collage of electro-acoustic experiments, paranormal field recordings, and collaborative noise pop songs from 2012. Recorded up and down the Florida peninsula on a variety of digital and tape recorders.</p>
+            </div>
+            
+            <!--Popular Music-->
+            <div class="description" id="popular-music-description">
+                <p>A compilation of field recordings made from the summer of 2011 to the fall of 2013 mostly in and around Tallahasee, FL: live music, short interviews, mechanical noises, band pratices, radio stations, karaoke nights, tape errors, strangers, wild animals, ghosts, live readings, and other mistakes. Mostly recorded on a cheap cassette recorder which fell apart soon after.</p>
+            </div>
+            
+            <!--FSU-->
+            <div class="description" id="fsu-description">
+                <p>A compilation of field recordings made from the summer of 2011 to the fall of 2013 mostly in and around Tallahasee, FL: live music, short interviews, mechanical noises, band pratices, radio stations, karaoke nights, tape errors, strangers, wild animals, ghosts, live readings, and other mistakes. Mostly recorded on a cheap cassette recorder which fell apart soon after.</p>
+            </div>
+		</article>
+	</div>   
+</body>
+</html>
