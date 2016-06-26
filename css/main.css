@@ -132,6 +132,10 @@ header p {
   padding-left: 5px;
 }
 
+.samples-heading h2 {
+  padding: 0;
+}
+
 .samples {
   margin-bottom: 50px;
 }
@@ -158,6 +162,7 @@ header p {
 
 .sample-img {
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .sample-title {
@@ -165,5 +170,5 @@ header p {
 }
 
 .description p {
-  margin-top: 5px;
+  margin-top: 15px;
 }
