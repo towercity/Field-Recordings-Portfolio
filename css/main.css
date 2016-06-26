@@ -156,6 +156,10 @@ header p {
     text-decoration: none;
 }
 
+.sample-img {
+  cursor: pointer;
+}
+
 .sample-title {
   margin-top: 10px;
 }
