@@ -135,7 +135,7 @@ header p {
 
 .samples .col-md-4 {
     max-width: 320px;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
 }
@@ -151,4 +151,12 @@ header p {
 .samples a:active {
     color: #bcbbbb;
     text-decoration: none;
+}
+
+.sample-title {
+  margin-top: 10px;
+}
+
+.description p {
+  margin-top: 5px;
 }
