@@ -58,6 +58,11 @@ header img {
     padding-left: 0;
 }
 
+.samples-heading h2 {
+  padding-top: 25px;
+  font-size: 40px;
+}
+
 .splash img {
     padding-top: 0;
 }
