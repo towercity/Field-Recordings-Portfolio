@@ -10,3 +10,4 @@ Simply clone the repository and open test.html
   - External API, if possible
   - See if you can find one like a bottom bar that can be played from anywhere in the portfolio
 - (Iffy) bio and contact sections
+- Change color scheme to differ from other web-portfolio
