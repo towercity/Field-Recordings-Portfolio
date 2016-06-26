@@ -11,9 +11,9 @@
     font-family: 'Lato', sans-serif;
 }
 
-img, 
-embed, 
-object, 
+img,
+embed,
+object,
 video {
     max-width: 100%;
 }
@@ -46,7 +46,7 @@ p, p i {
     width: 100%;
 }
 
-.row { 
+.row {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -126,7 +126,7 @@ header p {
 
 /* Samples */
 .samples-heading {
-    padding-left: 25px;
+    padding-left: 5px;
 }
 
 .samples {
@@ -152,4 +152,3 @@ header p {
     color: #bcbbbb;
     text-decoration: none;
 }
-
