@@ -44,6 +44,9 @@ p, p i {
 /* Flex-box grid setup */
 .container {
     width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
 }
 
 .row {
@@ -107,7 +110,7 @@ p, p i {
 /* Header */
 header {
     margin: 50px 0 20px 0;
-    padding-bottom: 5px;
+    padding: 5px 10px;
     border-bottom: 3px solid #bcbbbb;
 }
 
