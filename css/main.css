@@ -174,3 +174,17 @@ header p {
 .description p {
   margin-top: 15px;
 }
+
+/* Modals */
+.modal-content {
+  border-bottom: 5px solid #bcbbbb;
+}
+
+.modal-heading {
+  padding: 5px 15px;
+}
+
+.modal-title {
+  text-align: left;
+  text-transform: none;
+}
