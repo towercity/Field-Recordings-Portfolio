@@ -177,7 +177,7 @@ header p {
 
 /* Modals */
 .modal.fade.in {
-  bottom: 25px;
+  bottom: 20px;
 }
 
 .modal-dialog {
@@ -198,15 +198,15 @@ header p {
 }
 
 .modal-backdrop.in {
-  bottom: 25px;
+  bottom: 20px;
 }
 
 /* Audio bar */
-#audio-bar {
+.audio-bar {
   position: fixed;
   bottom: 0;
   left: 0;
   background-color: #bcbbbb;
   width: 100%;
-  height: 25px;
+  height: 20px;
 }
