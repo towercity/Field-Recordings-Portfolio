@@ -204,6 +204,7 @@ header p {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  height: 168.75px;
 }
 
 .playlist img {
@@ -213,14 +214,20 @@ header p {
 .song-list {
   list-style-type: none;
   padding: 0 10px;
+  margin: 2.5px;
   width: 55%;
-  height: 163.75px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.song-list::-webkit-scrollbar:vertical {
+    display: none;
 }
 
 .song-list li {
   color: white;
-  border-bottom: 1px solid white;
-  padding: 2.5px 0;
+  border-bottom: 0.5px solid white;
+  padding: 2.5px 0 3px 0;
 }
 
 .song-list li:last-child {
