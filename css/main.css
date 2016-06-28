@@ -201,10 +201,30 @@ header p {
   width: 100%;
   margin-bottom: 10px;
   background-color: #bcbbbb;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .playlist img {
   width: 45%;
+}
+
+.song-list {
+  list-style-type: none;
+  padding: 0 10px;
+  width: 55%;
+  height: 163.75px;
+}
+
+.song-list li {
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 2.5px 0;
+}
+
+.song-list li:last-child {
+  border-bottom: none;
 }
 
 /* Audio bar */

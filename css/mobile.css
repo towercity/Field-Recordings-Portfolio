@@ -92,7 +92,15 @@ header img {
   padding-right: 10px;
 }
 
+.playlist {
+  display: block;
+}
+
 .playlist img {
   width: 100%;
-  padding-bottom: 10px;
+}
+
+.song-list {
+  width: 100%;
+  padding-bottom: 5px;
 }
