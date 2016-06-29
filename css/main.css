@@ -228,6 +228,11 @@ header p {
   color: white;
   border-bottom: 0.5px solid white;
   padding: 2.5px 0 3px 0;
+  cursor: pointer;
+}
+
+.song-right {
+  float: right;
 }
 
 .song-list li:last-child {
