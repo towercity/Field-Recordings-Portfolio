@@ -161,3 +161,14 @@ var methods = {
     song.play();
   }
 };
+
+//event listeners
+$('.play').click(function(e) {
+  e.preventDefault();
+  song.play();
+});
+
+$('.pause').click(function(e) {
+  e.preventDefault();
+  song.pause();
+});
