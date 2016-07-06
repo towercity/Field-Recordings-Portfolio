@@ -142,3 +142,22 @@ var playlist = {
     ]
   }
 };
+
+//methods object
+var methods = {
+  initAudio: function(album, index) {
+    var track = album.tracks[index];
+
+    var url = track.url;
+    var albumTitle = album.title;
+    var trackTitle = track.name;
+
+    //Changes the info in the player bar
+    $('.title').text(trackTitle);
+    $('.album').text(albumTitle);
+
+    //Inits song, plays
+    song = new Audio(url);
+    song.play();
+  }
+};
