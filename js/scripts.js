@@ -106,7 +106,7 @@ var playlist = {
       }
     ]
   },
-  popMusic: {
+  pop: {
     title: "popular music, vols. 1 & 2",
     tracks: [
       {
