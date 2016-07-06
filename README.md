@@ -10,3 +10,4 @@ Simply clone the repository and open test.html
   - See if you can find one like a bottom bar that can be played from anywhere in the portfolio
 - Fix info for popular music
 - Add light background color to heading
+- Transfer code to a popular framwework, for practice in understanding
