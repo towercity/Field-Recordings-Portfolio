@@ -172,3 +172,12 @@ $('.pause').click(function(e) {
   e.preventDefault();
   song.pause();
 });
+
+$('.volume').click(function(e) {
+  e.preventDefault();
+  if (song.volume === 0) {
+    song.volume = 1;
+  } else if (song.volume === 1) {
+    song.volume = 0;
+  }
+});
