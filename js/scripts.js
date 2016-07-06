@@ -147,7 +147,7 @@ var playlist = {
 var methods = {
   initAudio: function(album, index) {
     methods.switchSong(album, index);
-    song.play();
+    methods.playSong(album, index);
 
     //adds event listeners for fwd and rev
     $('.rev').click(function(e) {
@@ -157,7 +157,7 @@ var methods = {
         index -= 1;
         song.pause();
         methods.switchSong(album, index);
-        song.play();
+        methods.playSong(album, index);
       }
     });
 
@@ -168,7 +168,7 @@ var methods = {
         index += 1;
         song.pause();
         methods.switchSong(album, index);
-        song.play();
+        methods.playSong(album, index);
       }
     });
   },
@@ -185,6 +185,17 @@ var methods = {
 
     //Inits song, plays
     song = new Audio(url);
+  },
+  playSong: function(album, index) {
+    song.play();
+    song.addEventListener('ended', function(){
+      if (index < album.tracks.length - 1) {
+        index += 1;
+        song.pause();
+        methods.switchSong(album, index);
+        methods.playSong(album, index);
+      }
+    });
   }
 };
 
