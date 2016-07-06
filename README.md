@@ -5,7 +5,7 @@ A html portfolio of field recordings and audio manipulation. Built to be respons
 Simply clone the repository and open test.html
 
 ##To implement
-- Fix bottom bar
+- Fix bottom bar in mobile
 - Fix info for popular music
 - Add light background color to heading
 - Transfer code to a popular framwework, for practice in understanding
