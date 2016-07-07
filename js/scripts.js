@@ -2,14 +2,17 @@
 
 $('#der-mond-img').click(function() {
   $('#der-mond-modal').modal();
+  methods.eraseSong();
 });
 
 $('#popular-music-img').click(function() {
   $('#popular-music-modal').modal();
+  methods.eraseSong();
 });
 
 $('#fsu-img').click(function() {
   $('#fsu-modal').modal();
+  methods.eraseSong();
 });
 
 
@@ -180,6 +183,15 @@ var methods = {
         methods.playSong(album, index);
       }
     });
+  },
+  eraseSong: function() {
+    if(song !== 0) {
+      song.pause();
+      song = 0;
+
+      $('.title').text(' ');
+      $('.album').text(' ');
+    }
   }
 };
 
