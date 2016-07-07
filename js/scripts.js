@@ -144,7 +144,7 @@ var methods = {
       e.preventDefault();
 
       if (index < album.tracks.length - 1) {
-        index += 1;
+        index = Math.round(index) + 1;
         song.pause();
         methods.switchSong(album, index);
         methods.playSong(album, index);
@@ -152,7 +152,12 @@ var methods = {
     });
   },
   switchSong: function(album, index) {
+    console.log(album);
+    console.log(index);
+
     var track = album.tracks[index];
+
+    console.log(track);
 
     var url = track.url;
     var albumTitle = album.title;
