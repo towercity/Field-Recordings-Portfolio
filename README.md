@@ -6,6 +6,6 @@ Simply clone the repository and open test.html
 
 ##To implement
 - Fix playlist view in mobile
-- Fix info for popular music
-- Add light background color to heading
+- Fix album descriptions
 - Transfer code to a popular framwework, for practice in understanding
+- Add sub-urls to modals
