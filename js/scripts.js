@@ -155,12 +155,7 @@ var methods = {
     });
   },
   switchSong: function(album, index) {
-    console.log(album);
-    console.log(index);
-
     var track = album.tracks[index];
-
-    console.log(track);
 
     var url = track.url;
     var albumTitle = album.title;
