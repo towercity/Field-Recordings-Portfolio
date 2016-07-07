@@ -108,15 +108,15 @@ var playlist = {
     tracks: [
       {
         name: 'side A',
-        url: '...'
+        url: 'audio/fsu/01.mp3'
       },
       {
         name: 'side B',
-        url: '...'
+        url: 'audio/fsu/02.mp3'
       },
       {
         name: 'side C',
-        url: '...'
+        url: 'audio/fsu/03.mp3'
       },
     ]
   }
