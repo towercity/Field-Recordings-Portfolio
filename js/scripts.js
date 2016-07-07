@@ -128,18 +128,19 @@ var playlist = {
 //methods object
 var methods = {
   initAudio: function(album, index) {
-    methods.switchSong(album, index);
-    methods.playSong(album, index);
+    var i = parseInt(index);
+    methods.switchSong(album, i);
+    methods.playSong(album, i);
 
     //adds event listeners for fwd and rev
     $('.rev').click(function(e) {
       e.preventDefault();
 
-      if (index !== 0) {
-        index -= 1;
+      if (i !== 0) {
+        i -= 1;
         song.pause();
-        methods.switchSong(album, index);
-        methods.playSong(album, index);
+        methods.switchSong(album, i);
+        methods.playSong(album, i);
       }
     });
 
@@ -147,14 +148,16 @@ var methods = {
       e.preventDefault();
 
       if (index < album.tracks.length - 1) {
-        index = Math.round(index) + 1;
+        i += 1;
         song.pause();
-        methods.switchSong(album, index);
-        methods.playSong(album, index);
+        methods.switchSong(album, i);
+        methods.playSong(album, i);
       }
     });
   },
   switchSong: function(album, index) {
+    console.log(index);
+
     var track = album.tracks[index];
 
     var url = track.url;
