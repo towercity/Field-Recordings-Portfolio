@@ -246,8 +246,8 @@ header p {
   left: 0;
   height: 20px;
   z-index: 1041;
-  margin: 0 1%;
-  width: 98%;
+  margin: 0 7px;
+  width: 586px;
 }
 
 .player {
@@ -258,10 +258,10 @@ header p {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #bcbbbb;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
   font-weight: bold;
   font-family: 'EB Garamond', serif;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .player div {
