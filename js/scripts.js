@@ -17,7 +17,7 @@ $('#fsu-img').click(function() {
 //----------------------MUSIC PLAYER-------------------
 //code based on tutorial at https://www.script-tutorials.com/html5-audio-player-with-playlist
 
-var song;
+var song = 0;
 
 //playlist object
 var playlist = {
@@ -196,5 +196,25 @@ $('.volume').click(function(e) {
     song.volume = 1;
   } else if (song.volume === 1) {
     song.volume = 0;
+  }
+});
+
+$('.song-list li').click(function(e) {
+  e.preventDefault();
+
+  var index = e.currentTarget.id;
+  var album = e.currentTarget.className;
+
+  //stops songs before playing new one
+  if(song !== 0) {
+    song.pause();
+  }
+
+  if (album === 'der-mond') {
+    methods.initAudio(playlist.derMond, index);
+  } else if (album === 'pop') {
+    methods.initAudio(playlist.pop, index);
+  } else if (album === 'fsu') {
+    methods.initAudio(playlist.fsu, index);
   }
 });
