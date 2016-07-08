@@ -94,14 +94,16 @@ header img {
 
 .playlist {
   display: block;
+  height: 100%;
 }
 
 .playlist img {
   width: 100%;
-  height:
 }
 
 .song-list {
   width: 100%;
+  height: 150px;
+  max-height: 25vh;
   padding-bottom: 5px;
 }
