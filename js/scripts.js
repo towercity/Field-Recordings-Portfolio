@@ -156,8 +156,6 @@ var methods = {
     });
   },
   switchSong: function(album, index) {
-    console.log(index);
-
     var track = album.tracks[index];
 
     var url = track.url;
