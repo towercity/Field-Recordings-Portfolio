@@ -21,52 +21,58 @@
   <link rel="stylesheet" media="(min-width:977px)" href="css/large.css">
 </head>
 <body>
+  <div class="container">
 
-<div ng-controller="PageSwitcher as switcher">
-  <ul class="nav nav-pills" div ng-controller="PageData as data">
-    <li ng-repeat="album in data.playlist" ng-class="{ active:switcher.isSelected($index)}">
-      <a href ng-click="switcher.selectTab($index)">{{album.title}}</a>
-    </li>
-  </ul>
+  	<!--Header-->
+		<header class="heading row">
+			<div class="col-md-3"><img src="images/logo.jpg" alt="logo"></div>
+			<div class="col-md-9">
+				<h1 class="text-right">Eric Pierce</h1>
+        <p class="text-right">Sound Collage Artist</p>
+			</div>
+		</header>
 
-  <div ng-controller="PageData as data">
-    <div ng-repeat="album in data.playlist">
-      <div class="panel" ng-show="switcher.isSelected({{$index}})">
-        <div>
-          <div class="modal-content">
+    <!--Splash-->
+		<div class="splash row">
+      <div class="col-md-12 focus-img">
+        <!--<img src="images/focus.jpg" alt="Splash image" class="img-responsive">-->
+      </div>
+		</div>
 
-            <div class="modal-heading">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h3 class="modal-title">{{album.title}}</h3>
-            </div>
 
-            <div class="modal-body">
+    <div ng-controller="PageSwitcher as switcher">
+      <ul class="nav nav-pills" div ng-controller="PageData as data">
+        <li ng-repeat="album in data.playlist" ng-class="{ active:switcher.isSelected($index)}">
+          <a href ng-click="switcher.selectTab($index)">{{album.title}}</a>
+        </li>
+      </ul>
+
+      <div ng-controller="PageData as data">
+        <div ng-repeat="album in data.playlist">
+          <div class="panel" ng-show="switcher.isSelected({{$index}})">
+            <div>
+              <h3>{{album.title}}</h3>
               <div class="playlist">
                 <img ng-src="{{album.cover}}" alt="{{album.title}} album cover">
                 <ol class="song-list">
                   <li ng-repeat="track in album.tracks"><span ng-attr-id="$index" ng-class="{{album.class}}"><span class="song-left">{{$index +   1}}: {{track.name}}</span><span class="song-right">{{track.trackLength}}</span></span></li>
                 </ol>
               </div>
-
-              <div>
-                {{album.descLong}}
-              </div>
-
+              {{album.descLong}}
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<script src="framework/jquery-1.12.0.min.js"></script>
-<script src="framework/bootstrap/js/bootstrap.min.js"></script>
-<script src="framework/angular.min.js"></script>
-<!--local scripts-->
-<script src="js/scripts.js"></script>
-<script src="js/app.js"></script>
-<script src="js/album-page.js"></script>
+  
+  <!--framework scripts-->
+  <script src="framework/jquery-1.12.0.min.js"></script>
+  <script src="framework/bootstrap/js/bootstrap.min.js"></script>
+  <script src="framework/angular.min.js"></script>
+  <!--local scripts-->
+  <script src="js/scripts.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/album-page.js"></script>
 </body>
 </html>
