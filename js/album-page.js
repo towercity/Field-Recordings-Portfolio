@@ -1,7 +1,7 @@
 (function(){
   var app = angular.module('album-page', []);
 
-  app.controller('page-data', ['$http', function($http) {
+  app.controller('PageData', ['$http', function($http) {
     var self = this;
     self.playlist = {};
 
