@@ -5,8 +5,10 @@
     var self = this;
     self.playlist = {};
 
-    $http.get('json/playlist.json').success(function(data) {
-      self.playlist = data;
+    $http.get('json/playlist.json').then(function(data) {
+      self.playlist = data.data;
+    }, function() {
+      console.log('fail');
     });
   }]);
 })();

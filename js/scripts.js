@@ -1,7 +1,7 @@
 //code to open modules
 
 $('#der-mond-img').click(function() {
-  $('#der-mond-modal').modal();
+  $('#der-mond').modal();
   methods.eraseSong();
 });
 
