@@ -1,3 +1,3 @@
 (function() {
-  var app = angular.module('page', []);
+  var app = angular.module('portfolio', ['album-page']);
 })();
