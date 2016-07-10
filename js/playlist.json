@@ -1,100 +1,130 @@
 {
   "derMond": {
     "title": "der Mond (ii)",
+    "cover": "images/screen01.jpg",
+    "descShort": "A collage of electro-acoustic experiments, paranormal field recordings, and collaborative noise pop songs from 2012. Recorded up and down the Florida peninsula on a variety of digital and tape recorders.",
+    "descLong": "<p>A collage style remix and remaster of three previous releases.</p>  <h4>01: der Mond</h4> <h5>Tracks 1 - 4</h5> <p>A song cycle inspired by (or directly lifted from) Jay Yahn's <a href=\"http://citizenflagpole.bandcamp.com/album/delusions-of-worth\" alt=\"Jay Yahn's Delusions of Worth\">Delusions of Worth</a>. Four short noise-pop bursts recorded in large part thru late 2000's flip phones, late 1970's tape decks, and single-coil guitar pickups, digitally altered after the fact.</p>  <h4>02: Compositions for Instruments, 2011</h4> <h5>Tracks 5 - 11, 16</h5>  <p>A collection of compositions and recurring themes from 2011 for a varitey of instruments both real and ficticous. Some compostions, such as 'I don't wanna die' and 'Crocodile' later evolved into full songs, and have been given the titles of their finished forms.</p>  <h4>03: Ghosts</h4>  <h5>Tracks 12 - 15</h5> <p>Four recordings for ghosts. Each combines a song recorded onto a four-track tape recorder in the main Diffenbaugh stairwell at Florida State University with a digital field recording from one of four haunted locations around Tallahassee.</p>",
     "tracks": [
       {
         "name": "der Mond",
-        "url": "audio/der-mond/01.ogg"
+        "url": "audio/der-mond/01.ogg",
+        "trackLength": "2:11"
       },
       {
         "name": "die Sonne",
-        "url": "audio/der-mond/02.ogg"
+        "url": "audio/der-mond/02.ogg",
+        "trackLength": "1:59"
       },
       {
         "name": "der Himmel",
-        "url": "audio/der-mond/03.ogg"
+        "url": "audio/der-mond/03.ogg",
+        "trackLength": "1:55"
       },
       {
         "name": "die Sternen",
-        "url": "audio/der-mond/04.ogg"
+        "url": "audio/der-mond/04.ogg",
+        "trackLength": "1:20"
       },
       {
         "name": "for Cardboard and Digital Oceans",
-        "url": "audio/der-mond/05.ogg"
+        "url": "audio/der-mond/05.ogg",
+        "trackLength": "1:12"
       },
       {
         "name": "for Piano and Locomotive",
-        "url": "audio/der-mond/06.ogg"
+        "url": "audio/der-mond/06.ogg",
+        "trackLength": "1:15"
       },
       {
         "name": "I don't wanna die",
-        "url": "audio/der-mond/07.ogg"
+        "url": "audio/der-mond/07.ogg",
+        "trackLength": "1:24"
       },
       {
         "name": "for Bell Tower and Reverb Pedal",
-        "url": "audio/der-mond/08.ogg"
+        "url": "audio/der-mond/08.ogg",
+        "trackLength": "1:03"
       },
       {
         "name": "'The Air After the Flood'",
-        "url": "audio/der-mond/09.ogg"
+        "url": "audio/der-mond/09.ogg",
+        "trackLength": "1:31"
       },
       {
         "name": "for Clarinet and Night Sky",
-        "url": "audio/der-mond/10.ogg"
+        "url": "audio/der-mond/10.ogg",
+        "trackLength": "1:56"
       },
       {
         "name": "for Organs and Drainpipe",
-        "url": "audio/der-mond/11.ogg"
+        "url": "audio/der-mond/11.ogg",
+        "trackLength": "2:55"
       },
       {
         "name": "Ghost",
-        "url": "audio/der-mond/12.ogg"
+        "url": "audio/der-mond/12.ogg",
+        "trackLength": "2:09"
       },
       {
         "name": "der Mond",
-        "url": "audio/der-mond/13.ogg"
+        "url": "audio/der-mond/13.ogg",
+        "trackLength": "2:01"
       },
       {
         "name": "Thaw",
-        "url": "audio/der-mond/14.ogg"
+        "url": "audio/der-mond/14.ogg",
+        "trackLength": "1:41"
       },
       {
         "name": "the Road to Tallahassee, pt. II",
-        "url": "audio/der-mond/15.ogg"
+        "url": "audio/der-mond/15.ogg",
+        "trackLength": "2:51"
       },
       {
         "name": "Crocodile/the Moon",
-        "url": "audio/der-mond/16.ogg"
+        "url": "audio/der-mond/16.ogg",
+        "trackLength": "2:21"
       }
     ]
   },
   "pop": {
     "title": "popular music, vols. 1 & 2",
+    "cover": "images/screen02.jpg",
+    "descShort": "A compilation of my grandfather's favorite songs from an old Reader's Digest 10 LP set titled 'Popular Music That Will Live Forever,' carefully recorded onto a cassette tape by my father so my grandfather could listen in the car. Years later, as the tape was growing weak at the spools, I recorded the cassette into two digital audio files. Forgotten pop songs trying to live on.",
+    "descLong": "<p>All songs on this release are originally from the first few LPs of Reader's Digest's <a href=\"https://www.discogs.com/Various-Popular-Music-That-Will-Live-Forever/release/4160802\" alt=\"Popular Music That Will Live Forever\">Popular Music That Will Live Forever</a> compilation. Sometime in the 70's my father recorded some of my grandfather's favorite songs from the album onto a single cassette tape so that my grandfather could listen to the album in his car. Almost fifty years later (after my grandfather died and the LPs were lost), I found the tapes in an old shoebox in my father's closet and recorded the songs again, this time from cassette into digital audio file. Although many of the songs on the tape have been forgotten, they live on now as digital files, covered in an unreal veneer of digital and analog decay.</p>",
     "tracks": [
       {
         "name": "vol. 1",
-        "url": "audio/popular-music/01.ogg"
+        "url": "audio/popular-music/01.ogg",
+        "trackLength": "43:33"
       },
       {
         "name": "vol. 2",
-        "url": "audio/popular-music/02.ogg"
+        "url": "audio/popular-music/02.ogg",
+        "trackLength": "42:44"
       }
     ]
   },
   "fsu": {
     "title": "florida state universiry 2011-2013",
+    "cover": "images/screen03.jpg",
+    "descShort": "A compilation of field recordings made from the summer of 2011 to the fall of 2013 mostly in and around Tallahasee, Florida: live music, short interviews, mechanical noises, band pratices, radio stations, karaoke nights, tape errors, strangers, wild animals, ghosts, live poetry readings, and other mistakes. Recorded on a cheap cassette recorder which fell apart in late 2013.",
+    "descLong":"<p>Selections from the countless hundreds of field recordings I made between the summer of 2011 and the fall of 2013, all while living in Tallahassee, Florida, and attending Florida State University. Includes recordings of street performers, band practices, interviews, overheard conversations, live improvs, mechanical noises, upstairs practice rooms, radio stations, turn signals, tape errors, karaoke, free concerts, friends, strangers, enemies, clarinets, etc., etc. Two years of my life explained as simply and as fully as I know how.</p> <p>Individual track breakdowns available <a href=\"http://popularmusic.bandcamp.com/album/popular-music-vol-5-florida-state-university-2011-2013\" alt=\"Side A\">here</a> for Side A, <a href=\"http://popularmusic.bandcamp.com/album/popular-music-vol-6-florida-state-university-2011-2013\" alt=\"Side B\">here</a> for Side B, and <a href=\"http://popularmusic.bandcamp.com/album/popular-music-vol-7-florida-state-university-2011-2013\" alt=\"Side C\">here</a> for Side C.</p>",
     "tracks": [
       {
         "name": "side A",
-        "url": "audio/fsu/01.mp3"
+        "url": "audio/fsu/01.mp3",
+        "trackLength": "44:56"
       },
       {
         "name": "side B",
-        "url": "audio/fsu/02.mp3"
+        "url": "audio/fsu/02.mp3",
+        "trackLength": "44:55"
       },
       {
         "name": "side C",
-        "url": "audio/fsu/03.mp3"
+        "url": "audio/fsu/03.mp3",
+        "trackLength": "43:32"
       },
     ]
   }
