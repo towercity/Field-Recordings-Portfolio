@@ -20,39 +20,46 @@
   <link rel="stylesheet" media="(min-width:616px)" href="css/medium.css">
   <link rel="stylesheet" media="(min-width:977px)" href="css/large.css">
 </head>
+<body>
 
-<aside ng-controller="PageData as data">
-  <div ng-repeat="album in data.playlist">
-  <div tabindex="-1" role="dialog">
-    <div>
-      <div class="modal-content">
+<div ng-controller="PageSwitcher as switcher">
+  <ul class="nav nav-pills" div ng-controller="PageData as data">
+    <li ng-repeat="album in data.playlist" ng-class="{ active:switcher.isSelected($index)}">
+      <a href ng-click="switcher.selectTab($index)">{{album.title}}</a>
+    </li>
+  </ul>
 
-        <div class="modal-heading">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="modal-title">{{album.title}}</h3>
-        </div>
+  <div ng-controller="PageData as data">
+    <div ng-repeat="album in data.playlist">
+      <div class="panel" ng-show="switcher.isSelected({{$index}})">
+        <div>
+          <div class="modal-content">
 
-        <div class="modal-body">
-          <div class="playlist">
-            <img ng-src="{{album.cover}}" alt="{{album.title}} album cover">
-            <ol class="song-list">
-              <li ng-repeat="track in album.tracks"><span ng-attr-id="$index" ng-class="{{album.class}}"><span class="song-left">{{$index + 1}}: {{track.name}}</span><span class="song-right">{{track.trackLength}}</span></span></li>
-            </ol>
+            <div class="modal-heading">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h3 class="modal-title">{{album.title}}</h3>
+            </div>
+
+            <div class="modal-body">
+              <div class="playlist">
+                <img ng-src="{{album.cover}}" alt="{{album.title}} album cover">
+                <ol class="song-list">
+                  <li ng-repeat="track in album.tracks"><span ng-attr-id="$index" ng-class="{{album.class}}"><span class="song-left">{{$index +   1}}: {{track.name}}</span><span class="song-right">{{track.trackLength}}</span></span></li>
+                </ol>
+              </div>
+
+              <div>
+                {{album.descLong}}
+              </div>
+
+            </div>
           </div>
 
-          <div>
-            {{album.descLong}}
-          </div>
-
-          <!--Audio player based in part on https://www.script-tutorials.com/html5-audio-player-with-playlist/-->
-
         </div>
-        </div>
-
       </div>
     </div>
   </div>
-</aside>
+</div>
 
 <script src="framework/jquery-1.12.0.min.js"></script>
 <script src="framework/bootstrap/js/bootstrap.min.js"></script>
