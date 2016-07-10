@@ -6,5 +6,6 @@ Simply clone the repository and open test.html
 
 ##To implement
 - Make song stop playing not when modal is opened, but when closed
-- Transfer code to a popular framwework, for practice in understanding
-- Add sub-urls to modals
+- Transfer code angular
+- Change modals into full pages, or at least tabs
+- Add sub-urls to tabs
