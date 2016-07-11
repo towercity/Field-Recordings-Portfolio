@@ -199,16 +199,18 @@ header p {
 /* Modal playlist */
 .playlist {
   width: 100%;
-  margin-bottom: 10px;
   background-color: #bcbbbb;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   height: 168.75px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .playlist img {
   width: 45%;
+  border-top-left-radius: 6px;
 }
 
 .song-list {
@@ -241,13 +243,9 @@ header p {
 
 /* Audio bar */
 .audio-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 20px;
-  z-index: 1041;
-  margin: 0 7px;
-  width: 586px;
+  border-top: solid 0.5px white;
+  height: 19.5px;
+  width: 100%;
 }
 
 .player {

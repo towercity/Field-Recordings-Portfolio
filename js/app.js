@@ -2,7 +2,7 @@
   var app = angular.module('portfolio', ['album-page']);
 
   app.controller('PageSwitcher', function() {
-    this.tab = -1;
+    this.tab = 0;
 
     this.selectTab = function(setTab) {
       this.tab = setTab;
