@@ -23,16 +23,22 @@ h1 {
   text-transform: uppercase;
   text-align: right;
   margin-bottom: 0;
+  font-size: 50px;
 }
 
 h2 {
   color: #bcbbbb;
+  font-size: 30px;
+  padding-bottom: 8px;
+  text-align: center;
+  margin: 2px 2px 10px 2px;
 }
 
 h3 {
   color: #747704;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 24px;
+  text-align: right;
 }
 
 p, p i {
@@ -47,6 +53,9 @@ p, p i {
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: white;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -57,53 +66,7 @@ p, p i {
   justify-content: space-around;
 }
 
-.col-md-1 {
-  width: 8.333%;
-}
 
-.col-md-2 {
-  width: 16.666%;
-}
-
-.col-md-3 {
-  width: 25%;
-}
-
-.col-md-4 {
-  width: 33.333%;
-}
-
-.col-md-5 {
-  width: 41.666%;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-.col-md-7 {
-  width: 58.333%;
-}
-
-.col-md-8 {
-  width: 66.666%;
-}
-
-.col-md-9 {
-  width: 75%;
-}
-
-.col-md-10 {
-  width: 83.333%;
-}
-
-.col-md-11 {
-  width: 91.666%;
-}
-
-.col-md-12 {
-  width: 100%;
-}
 
 /* Sections */
 
@@ -143,15 +106,17 @@ header p {
 }
 
 .samples .col-md-4 {
-  max-width: 320px;
+  max-width: 300px;
   margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
 }
 
 .samples img {
   width: 300px;
   margin:0 10px 0 10px;
+  padding: 0 5px;
 }
 
 .samples a:link,
@@ -168,35 +133,18 @@ header p {
 }
 
 .sample-title {
-  margin-top: 10px;
+  margin: 10px 15px 0 15px;
 }
 
-.description p {
-  margin-top: 15px;
+.description {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-/* Modals */
-
-.modal-dialog {
-  margin-top: 150px;
-}
-
-.modal-content {
-  border-bottom: 5px solid #bcbbbb;
-  max-width: 98%;
-  margin: 0 auto;
-}
-
-.modal-heading {
-  padding: 5px 15px;
-}
-
-.modal-title {
-  text-align: left;
-  text-transform: none;
-}
-
-/* Modal playlist */
+/* playlist */
 .music-holder {
   float: left;
   padding: 0 10px 0 0;
