@@ -82,28 +82,32 @@
               <div class="col-md-12 page-heading">
                 <h2>{{album.title}}</h2>
               </div>
-              <div class="playlist">
-                <img ng-src="{{album.cover}}" alt="{{album.title}} album cover">
-                <ol class="song-list">
-                  <li ng-repeat="track in album.tracks"><span ng-attr-id="$index" ng-class="{{album.class}}"><span class="song-left">{{$index +   1}}: {{track.name}}</span><span class="song-right">{{track.trackLength}}</span></span></li>
-                </ol>
+
+              <div class="music-holder">
+                <div class="playlist">
+                  <img ng-src="{{album.cover}}" alt="{{album.title}} album cover">
+                  <ol class="song-list">
+                    <li ng-repeat="track in album.tracks"><span ng-attr-id="$index" ng-class="{{album.class}}"><span class="song-left">{{$index +   1}}: {{track.name}}</span><span class="song-right">{{track.trackLength}}</span></span></li>
+                  </ol>
+                </div>
+                <!--Audio player based in part on https://www.script-tutorials.com/html5-audio-player-with-playlist/-->
+					  		<div class="audio-bar">
+						  		<div class="player">
+							  		<div class="controls">
+								  		<span class="rev"><i class="fa fa-backward" aria-hidden="true"></i></span>
+									  	<span class="play"><i class="fa fa-play" aria-hidden="true"></i></span>
+										  <span class="pause"><i class="fa fa-pause" aria-hidden="true"></i></span>
+  										<span class="fwd"><i class="fa fa-forward" aria-hidden="true"></i></span>
+	  								</div>
+		  							<div class="track-info">
+			  							<span class="title"></span>
+				  					</div>
+					  				<div class="volume"><i class="fa fa-volume-up" aria-hidden="true"></i></div>
+						  		</div>
+							  </div>
               </div>
-              <!--Audio player based in part on https://www.script-tutorials.com/html5-audio-player-with-playlist/-->
-							<div class="audio-bar">
-								<div class="player">
-									<div class="controls">
-										<span class="rev"><i class="fa fa-backward" aria-hidden="true"></i></span>
-										<span class="play"><i class="fa fa-play" aria-hidden="true"></i></span>
-										<span class="pause"><i class="fa fa-pause" aria-hidden="true"></i></span>
-										<span class="fwd"><i class="fa fa-forward" aria-hidden="true"></i></span>
-									</div>
-									<div class="track-info">
-										<span class="title"></span>
-									</div>
-									<div class="volume"><i class="fa fa-volume-up" aria-hidden="true"></i></div>
-								</div>
-							</div>
-              {{album.descLong}}
+
+              <div class="desc-holder">{{album.descLong}}</div>
             </div>
           </div>
         </div>

@@ -197,6 +197,13 @@ header p {
 }
 
 /* Modal playlist */
+.music-holder {
+  float: left;
+  width: 60%;
+  max-width: 580px;
+  padding: 0 10px;
+}
+
 .playlist {
   width: 100%;
   background-color: #bcbbbb;
