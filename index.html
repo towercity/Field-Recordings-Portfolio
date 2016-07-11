@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="framework/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="framework/font-awesome-4.6.3/css/font-awesome.min.css">
 
-
   <!--CSS sheets-->
 	<link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" media="(max-width:976px)" href="css/mobile.css">
@@ -39,19 +38,50 @@
       </div>
 		</div>
 
-
+    <!--Page switcher-->
     <div ng-controller="PageSwitcher as switcher">
+
+      <!--Temporary tab bar-->
       <ul class="nav nav-pills" div ng-controller="PageData as data">
+        <li ng-class="{ active:switcher.isSelected(-1)}"><a href ng-click="switcher.selectTab(-1)">Main Page</a></li>
         <li ng-repeat="album in data.playlist" ng-class="{ active:switcher.isSelected($index)}">
           <a href ng-click="switcher.selectTab($index)">{{album.title}}</a>
         </li>
       </ul>
 
+      <!--Main page-->
+      <div class="panel" ng-show="switcher.isSelected(-1)">
+        <div class="row">
+          <div class="col-md-12 page-heading"><h2>Featured Work</h2></div>
+  		  </div>
+
+        <article class="samples" ng-controller="PageData as data">
+          <!--Sample image-->
+          <div class="row">
+            <div class="col-md-4 sample-img" ng-repeat="album in data.playlist">
+              <img ng-src="{{album.cover}}" alt="{{album.title}} album cover" class="img-responsive">
+              <h3 class="sample-title">{{album.title}}</h3>
+              <p class="description">{{album.descShort}}</p>
+            </div>
+          </div>
+
+          <!--Descriptions-->
+          <div class="row">
+            <div class="description" ng-repeat="album in data.playlist">
+
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!--Album pages-->
       <div ng-controller="PageData as data">
         <div ng-repeat="album in data.playlist">
           <div class="panel" ng-show="switcher.isSelected({{$index}})">
             <div>
-              <h3>{{album.title}}</h3>
+              <div class="col-md-12 page-heading">
+                <h2>{{album.title}}</h2>
+              </div>
               <div class="playlist">
                 <img ng-src="{{album.cover}}" alt="{{album.title}} album cover">
                 <ol class="song-list">
@@ -65,7 +95,7 @@
       </div>
     </div>
   </div>
-  
+
   <!--framework scripts-->
   <script src="framework/jquery-1.12.0.min.js"></script>
   <script src="framework/bootstrap/js/bootstrap.min.js"></script>
