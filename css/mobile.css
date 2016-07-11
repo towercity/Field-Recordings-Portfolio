@@ -61,25 +61,3 @@ header img {
 .panel {
   padding: 0 5px;
 }
-
-.music-holder {
-  min-width: 260px;
-  max-width: 416px;
-}
-
-.playlist {
-  display: block;
-  height: 100%;
-}
-
-.playlist img {
-  width: 100%;
-  border-top-right-radius: 6px;
-}
-
-.song-list {
-  width: 100%;
-  height: 150px;
-  max-height: 25vh;
-  margin-bottom: 0;
-}
