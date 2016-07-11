@@ -7,8 +7,14 @@
 
     $http.get('json/playlist.json').then(function(data) {
       self.playlist = data.data;
+
+      // Iterates through albums and adds the long desc html to the page
+      self.playlist.forEach(function(album) {
+        var el = '#' + album.class + '-desc';
+        $(el).html(album.descLong);
+      });
     }, function() {
-      console.log('fail');
+      console.log('plyalist ajax failed');
     });
   }]);
 })();

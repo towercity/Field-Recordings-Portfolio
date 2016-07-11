@@ -74,7 +74,7 @@
                 <div class="playlist">
                   <img ng-src="{{album.cover}}" alt="{{album.title}} album cover">
                   <ol class="song-list">
-                    <li ng-repeat="track in album.tracks"><span ng-attr-id="$index" ng-class="{{album.class}}"><span class="song-left">{{$index +   1}}: {{track.name}}</span><span class="song-right">{{track.trackLength}}</span></span></li>
+                    <li ng-repeat="track in album.tracks"><span ng-attr-id="{{$index}}" class="{{album.class}}"><span class="song-left">{{$index + 1}}: {{track.name}}</span><span class="song-right">{{track.trackLength}}</span></span></li>
                   </ol>
                 </div>
                 <!--Audio player based in part on https://www.script-tutorials.com/html5-audio-player-with-playlist/-->
@@ -94,9 +94,9 @@
 							  </div>
               </div>
 
-              <div class="desc-holder">{{album.descLong}}</div>
+              <div class="desc-holder" ng-attr-id="{{album.class}}-desc">{{album.descLong}}</div>
 
-              <button ng-click="switcher.selectTab(-1)" class="btn btn-default btn-return" role="button"><i class="fa fa-undo" aria-hidden="true"></i>  Return</button>
+              <a ng-click="switcher.selectTab(-1)" class="btn btn-default btn-return" role="button"><i class="fa fa-undo" aria-hidden="true"></i>  Return</a>
             </div>
           </div>
         </div>
