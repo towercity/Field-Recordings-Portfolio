@@ -38,14 +38,16 @@
       </div>
 		</div>
 
+    <div class="row">
+      <div class="col-md-12 page-heading"><h2>Featured Work</h2></div>
+    </div>
+
     <!--Page switcher-->
     <div ng-controller="PageSwitcher as switcher">
 
       <!--Main page-->
       <div class="panel" ng-show="switcher.isSelected(-1)">
-        <div class="row">
-          <div class="col-md-12 page-heading"><h2>Featured Work</h2></div>
-  		  </div>
+
 
         <article class="samples" ng-controller="PageData as data">
           <!--Albums-->
