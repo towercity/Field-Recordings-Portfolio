@@ -288,3 +288,7 @@ header p {
   margin-left: auto;
   cursor: pointer;
 }
+
+.btn-return {
+  float: right;
+}
