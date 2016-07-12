@@ -1,22 +1,3 @@
-//code to open modules
-
-$('#der-mond-img').click(function() {
-  $('#der-mond').modal();
-  methods.eraseSong();
-});
-
-$('#popular-music-img').click(function() {
-  $('#popular-music-modal').modal();
-  methods.eraseSong();
-});
-
-$('#fsu-img').click(function() {
-  $('#fsu-modal').modal();
-  methods.eraseSong();
-});
-
-
-
 //----------------------MUSIC PLAYER-------------------
 //code based on tutorial at https://www.script-tutorials.com/html5-audio-player-with-playlist
 
@@ -52,6 +33,8 @@ var methods = {
       }
     });
   },
+
+
   switchSong: function(album, index) {
     var track = album.tracks[index];
 
@@ -65,6 +48,8 @@ var methods = {
     //Inits song, plays
     song = new Audio(url);
   },
+
+
   playSong: function(album, index) {
     song.play();
     song.addEventListener('ended', function(){
@@ -76,6 +61,8 @@ var methods = {
       }
     });
   },
+
+
   eraseSong: function() {
     if(song !== 0) {
       song.pause();
@@ -96,16 +83,6 @@ $('.play').click(function(e) {
 $('.pause').click(function(e) {
   e.preventDefault();
   song.pause();
-});
-
-$('.volume').click(function(e) {
-  e.preventDefault();
-
-  if (song.volume === 0) {
-    song.volume = 1;
-  } else if (song.volume === 1) {
-    song.volume = 0;
-  }
 });
 
 $('.song-list li').click(function(e) {
