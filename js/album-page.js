@@ -76,5 +76,14 @@
         self.initAudio(self.currentAlbum, self.trackIndex - 1);
       }
     };
+
+    self.eraseSong = function() {
+      if(self.song !== 0) {
+        self.song.pause();
+        self.song = 0;
+
+        $('.title').text(' ');
+      }
+    };
   }]);
 })();
