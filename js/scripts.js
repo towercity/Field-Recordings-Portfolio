@@ -35,32 +35,7 @@ var methods = {
   },
 
 
-  switchSong: function(album, index) {
-    var track = album.tracks[index];
-
-    var url = track.url;
-    var albumTitle = album.title;
-    var trackTitle = track.name;
-
-    //Changes the info in the player bar
-    $('.title').text(trackTitle);
-
-    //Inits song, plays
-    song = new Audio(url);
-  },
-
-
-  playSong: function(album, index) {
-    song.play();
-    song.addEventListener('ended', function(){
-      if (index < album.tracks.length - 1) {
-        index += 1;
-        song.pause();
-        methods.switchSong(album, index);
-        methods.playSong(album, index);
-      }
-    });
-  },
+  
 
 
   eraseSong: function() {

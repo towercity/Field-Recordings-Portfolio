@@ -5,8 +5,9 @@
     var self = this;
     self.playlist = {};
     self.song = 0;
-    // Makes the currently playing track index global so as not to constantly move it through function calls
+    // Makes the currently playing track info global so as not to constantly move it through function calls
     self.trackIndex = 0;
+    self.currentAlbum = {};
 
     $http.get('json/playlist.json').then(function(data) {
       self.playlist = data.data;
@@ -23,16 +24,19 @@
     // Audio player functions
 
     self.initAudio = function(album, index) {
-      // If a song is already playing, stops the song 
+      // If a song is already playing, stops the song
       if(self.song !== 0) {
         self.song.pause();
       }
+
+      // Globalizes variables for later functions
+      self.trackIndex = index;
+      self.currentAlbum = album;
 
       var track = album.tracks[index];
       self.switchSong(track.name, track.url);
 
       self.song.addEventListener('ended', function(){
-        self.song.pause();
         self.initAudio(album, index + 1);
       });
     };
@@ -56,6 +60,20 @@
         self.song.volume = 1;
       } else if (self.song.volume === 1) {
         self.song.volume = 0;
+      }
+    };
+
+    self.fwd = function() {
+      if (self.trackIndex < self.currentAlbum.tracks.length - 1) {
+        self.initAudio(self.currentAlbum, self.trackIndex + 1);
+      } else {
+        self.song.pause();
+      }
+    };
+
+    self.rev = function() {
+      if(self.trackIndex !== 0) {
+        self.initAudio(self.currentAlbum, self.trackIndex - 1);
       }
     };
   }]);
