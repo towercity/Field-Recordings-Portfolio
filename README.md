@@ -5,7 +5,7 @@ A html portfolio of field recordings and audio manipulation. Built to be respons
 Simply clone the repository and open test.html
 
 ##To implement
-- Make song stop playing not when modal is opened, but when closed
 - Transfer code angular
+  - Directives!
 - Add sub-urls to tabs
 - CSS transitions in switching tabs
