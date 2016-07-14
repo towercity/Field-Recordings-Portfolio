@@ -15,8 +15,6 @@
       // Iterates through albums and adds the long desc html to the page
       self.playlist.forEach(function(album) {
         var el = '#' + album.class + '-desc';
-        console.log(el);
-        console.log(album.descLong);
         // Sets timeout to load in chrome
         setTimeout(function() {
           $(el).html(album.descLong);
