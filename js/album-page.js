@@ -92,6 +92,7 @@
 
   app.directive('albumPage', function() {
     return {
+      restrict: 'E',
       templateUrl: 'templates/album-page.html'
     };
   });
