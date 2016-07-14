@@ -89,4 +89,10 @@
       }
     };
   }]);
+
+  app.directive('albumPage', function() {
+    return {
+      templateUrl: 'templates/album-page.html'
+    };
+  });
 })();
