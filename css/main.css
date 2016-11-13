@@ -1,242 +1,243 @@
 /* Globals */
-* {
-  font-family: 'Lato', sans-serif;
-}
 
+* {
+	font-family: 'Raleway', sans-serif;
+}
 img,
 embed,
 object,
 video {
-  max-width: 100%;
+	max-width: 100%;
 }
-
 h1 {
-  color: #747704;
-  text-transform: uppercase;
-  text-align: right;
-  margin-bottom: 0;
-  font-size: 50px;
+	color: #747704;
+	text-transform: uppercase;
+	text-align: right;
+	margin-bottom: 0;
+	font-size: 50px;
 }
-
 h2 {
-  color: #bcbbbb;
-  font-size: 30px;
-  padding-bottom: 8px;
-  text-align: center;
-  margin: 2px 2px 10px 2px;
+	color: #777;
+	font-size: 30px;
+	padding-bottom: 8px;
+	text-align: center;
+	margin: 10px 2px 15px 2px;
 }
-
 h3 {
-  color: #747704;
-  text-transform: uppercase;
-  font-size: 24px;
-  text-align: right;
+	color: #747704;
+	text-transform: uppercase;
+	font-size: 24px;
+	text-align: right;
 }
-
-p, p i {
-  text-align: justify;
-  font-family: 'EB Garamond', serif;
-  color: #bcbbbb;
+p,
+p i {
+	text-align: justify;
+	font-family: 'EB Garamond', serif;
+	color: #777;
 }
-
+a {
+	font-family: 'EB Garamond', serif;
+}
 .panel {
-  box-shadow: 0 0 0 #fff;
+	box-shadow: 0 0 0 #fff;
 }
-
 .clear {
-  clear: both;
+	clear: both;
 }
 
 /* Flex-box grid setup */
-.container {
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: white;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
+.container {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: white;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .row {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 /* Sections */
 
-/* Header */
-header {
-  margin: 50px 0 0 0;
-  padding: 5px 10px;
-  border-bottom: 3px solid #bcbbbb;
-}
 
+/* Header */
+
+header {
+	margin: 50px 0 0 0;
+	padding: 5px 10px;
+	border-bottom: 3px solid #bcbbbb;
+}
 header p {
-  color: #747704;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  text-align: right;
-  margin: 0;
+	color: #747704;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	text-align: right;
+	margin: 0;
 }
 
 /* Splash */
+
 .focus-img {
-  background: url("../images/focus.jpg") no-repeat center center;
-  width: 100%;
-  height: 350px;
+	background: url("../images/focus.jpg") no-repeat center center;
+	width: 100%;
+	height: 350px;
 }
 
 /* Samples */
+
 .page-heading {
-  padding-left: 5px;
+	padding-left: 5px;
 }
-
 .page-heading h2 {
-  padding: 0;
+	padding: 0;
 }
-
 .samples {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
-
 .samples .col-md-4 {
-  max-width: 300px;
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
+	max-width: 300px;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
 }
-
 .samples img {
-  width: 300px;
+	width: 300px;
 }
-
 .samples a:link,
 .samples a:hover,
 .samples a:visited,
 .samples a:active {
-  color: #bcbbbb;
-  text-decoration: none;
+	color: #bcbbbb;
+	text-decoration: none;
 }
-
 .sample-img {
-  cursor: pointer;
-  padding: 0 5px;
+	cursor: pointer;
+	padding: 0 5px;
 }
-
 .sample-title {
-  margin: 10px 15px 0 15px;
+	margin: 10px 15px 5px 15px;
 }
-
 .description {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 300px;
-  padding-left: 10px;
-  padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 300px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* playlist */
+
 .music-holder {
-  float: left;
-  padding: 0 10px 0 0;
-  width: 60%;
-  min-width: 260px;
-  max-width: 416px;
+	float: left;
+	padding: 0 10px 0 0;
+	width: 60%;
+	min-width: 260px;
+	max-width: 416px;
 }
-
 .playlist {
-  width: 100%;
-  background-color: #bcbbbb;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  display: block;
-  height: 100%;
+	width: 100%;
+	background-color: #bcbbbb;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	display: block;
+	height: 100%;
 }
-
 .playlist img {
-  border-top-left-radius: 6px;
-  width: 100%;
-  border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	width: 100%;
+	border-top-right-radius: 6px;
 }
-
 .song-list {
-  list-style-type: none;
-  padding: 0 10px;
-  margin: 2.5px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  width: 100%;
-  height: 150px;
-  max-height: 25vh;
-  margin-bottom: 0;
+	list-style-type: none;
+	padding: 0 10px;
+	margin: 2.5px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: 150px;
+	max-height: 25vh;
+	margin-bottom: 0;
+	font-size: 12px;
 }
-
 .song-list::-webkit-scrollbar:vertical {
-    display: none;
+	display: none;
 }
-
 .song-list li {
-  color: white;
-  border-bottom: 0.5px solid white;
-  padding: 2.5px 0 3px 0;
-  cursor: pointer;
+	color: white;
+	border-bottom: 0.5px solid white;
+	padding: 2.5px 0 3px 0;
+	cursor: pointer;
 }
-
 .song-right {
-  float: right;
+	float: right;
 }
-
 .song-list li:last-child {
-  border-bottom: none;
+	border-bottom: none;
 }
 
 /* Audio bar */
+
 .audio-bar {
-  border-top: solid 0.5px white;
-  height: 19.5px;
-  width: 100%;
+	border-top: solid 0.5px white;
+	height: 19.5px;
+	width: 100%;
 }
-
 .player {
-  padding: 0 5px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #bcbbbb;
-  font-weight: bold;
-  font-family: 'EB Garamond', serif;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+	padding: 0 5px;
+	color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	background-color: #bcbbbb;
+	font-weight: bold;
+	font-family: 'EB Garamond', serif;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
 }
-
 .player div {
-  vertical-align: top;
-  padding: 0 2.5px;
-  width: auto;
+	vertical-align: top;
+	padding: 0 2.5px;
+	width: auto;
 }
-
 .controls {
-  margin-right: auto;
+	margin-right: auto;
 }
-
 .controls span {
-  padding: 0 2.5px;
-  cursor: pointer;
+	padding: 0 2.5px;
+	cursor: pointer;
 }
-
 .volume {
-  margin-left: auto;
-  cursor: pointer;
+	margin-left: auto;
+	cursor: pointer;
 }
-
+.title {
+	font-size: 12px;
+}
 .btn-return {
-  float: right;
-  color: #747704;
+	float: right;
+	color: #747704;
 }
