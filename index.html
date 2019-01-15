@@ -1,75 +1,79 @@
 <!doctype html>
 <html ng-app="portfolio">
+
 <head>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio | Eric Pierce</title>
 
-  <!--Google Fonts-->
-  <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+	<!--Google Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 
-  <!--External frameworks-->
-  <link rel="stylesheet" href="framework/bootstrap/css/bootstrap.min.css">
+	<!--External frameworks-->
+	<link rel="stylesheet" href="framework/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="framework/font-awesome-4.6.3/css/font-awesome.min.css">
 
-  <!--CSS sheets-->
+	<!--CSS sheets-->
 	<link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" media="(max-width:430px)" href="css/mobile.css">
+	<link rel="stylesheet" media="(max-width:430px)" href="css/mobile.css">
 </head>
-<body>
-  <div class="container">
 
-  	<!--Header-->
+<body>
+	<div class="container">
+
+		<!--Header-->
 		<header class="heading row">
 			<div class="col-md-3"><img src="images/logo.jpg" alt="logo"></div>
 			<div class="col-md-9">
 				<h1 class="text-right">Eric Pierce</h1>
-        <p class="text-right">Sound Collage Artist</p>
+				<p class="text-right">Sound Collage Artist</p>
 			</div>
 		</header>
 
-    <!--Splash-->
+		<!--Splash-->
 		<div class="splash row">
-      <div class="col-md-12 focus-img">
-        <!--<img src="images/focus.jpg" alt="Splash image" class="img-responsive">-->
-      </div>
+			<div class="col-md-12 focus-img">
+				<!--<img src="images/focus.jpg" alt="Splash image" class="img-responsive">-->
+			</div>
 		</div>
 
-    <div class="row">
-      <div class="col-md-12 page-heading"><h2>Featured Work</h2></div>
-    </div>
+		<div class="row">
+			<div class="col-md-12 page-heading">
+				<h2>Featured Work</h2></div>
+		</div>
 
-    <!--Page switcher-->
-    <div ng-controller="PageSwitcher as switcher">
+		<!--Page switcher-->
+		<div ng-controller="PageSwitcher as switcher">
 
-      <!--Main page-->
-      <div class="panel" ng-show="switcher.isSelected(-1)">
+			<!--Main page-->
+			<div class="panel" ng-show="switcher.isSelected(-1)">
 
 
-        <article class="samples" ng-controller="AlbumData as data">
-          <!--Albums-->
-          <div class="row">
-            <div class="col-md-4 sample-img" ng-repeat="album in data.playlist" ng-click="switcher.selectTab($index); data.loadContent()">
-              <img ng-src="{{album.cover}}" alt="{{album.title}} album cover" class="img-responsive">
-              <h3 class="sample-title">{{album.title}}</h3>
-              <p class="description">{{album.descShort}}</p>
-            </div>
-          </div>
-        </article>
-      </div>
+				<article class="samples" ng-controller="AlbumData as data">
+					<!--Albums-->
+					<div class="row">
+						<div class="col-md-4 sample-img" ng-repeat="album in data.playlist" ng-click="switcher.selectTab($index); data.loadContent()">
+							<img ng-src="{{album.cover}}" alt="{{album.title}} album cover" class="img-responsive">
+							<h3 class="sample-title">{{album.title}}</h3>
+							<p class="description">{{album.descShort}}</p>
+						</div>
+					</div>
+				</article>
+			</div>
 
-      <album-page></album-page>
+			<album-page></album-page>
 
-    </div>
-  </div>
+		</div>
+	</div>
 
-  <!--framework scripts-->
-  <script src="framework/jquery-1.12.0.min.js"></script>
-  <script src="framework/bootstrap/js/bootstrap.min.js"></script>
-  <script src="framework/angular.min.js"></script>
-  <!--local scripts-->
-  <script src="js/app.js"></script>
-  <script src="js/album-page.js"></script>
+	<!--framework scripts-->
+	<script src="framework/jquery-1.12.0.min.js"></script>
+	<script src="framework/bootstrap/js/bootstrap.min.js"></script>
+	<script src="framework/angular.min.js"></script>
+	<!--local scripts-->
+	<script src="js/app.js"></script>
+	<script src="js/album-page.js"></script>
 </body>
+
 </html>
