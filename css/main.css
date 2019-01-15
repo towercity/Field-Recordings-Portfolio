@@ -1,7 +1,11 @@
 /* Globals */
 
 * {
-	font-family: 'Raleway', sans-serif;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+* {
+	font-family: 'Lato', sans-serif;
 }
 img,
 embed,
@@ -17,11 +21,11 @@ h1 {
 	font-size: 50px;
 }
 h2 {
-	color: #777;
+	color: #bcbbbb;
 	font-size: 30px;
 	padding-bottom: 8px;
 	text-align: center;
-	margin: 10px 2px 15px 2px;
+	margin: 2px 2px 10px 2px;
 }
 h3 {
 	color: #747704;
@@ -33,16 +37,7 @@ p,
 p i {
 	text-align: justify;
 	font-family: 'EB Garamond', serif;
-	color: #777;
-}
-a {
-	font-family: 'EB Garamond', serif;
-}
-.panel {
-	box-shadow: 0 0 0 #fff;
-}
-.clear {
-	clear: both;
+	color: #999;
 }
 
 /* Flex-box grid setup */
@@ -63,13 +58,12 @@ a {
 	width: 100%;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 /* Sections */
@@ -118,6 +112,8 @@ header p {
 }
 .samples img {
 	width: 300px;
+	margin: 0 10px 0 10px;
+	padding: 0 5px;
 }
 .samples a:link,
 .samples a:hover,
@@ -128,10 +124,10 @@ header p {
 }
 .sample-img {
 	cursor: pointer;
-	padding: 0 5px;
+	margin-top: 20px;
 }
 .sample-title {
-	margin: 10px 15px 5px 15px;
+	margin: 10px 15px 0 15px;
 }
 .description {
 	margin-left: auto;
@@ -173,7 +169,6 @@ header p {
 	height: 150px;
 	max-height: 25vh;
 	margin-bottom: 0;
-	font-size: 12px;
 }
 .song-list::-webkit-scrollbar:vertical {
 	display: none;
@@ -206,12 +201,12 @@ header p {
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+	    flex-wrap: wrap;
 	-ms-flex-pack: distribute;
-	justify-content: space-around;
+	    justify-content: space-around;
 	background-color: #bcbbbb;
 	font-weight: bold;
 	font-family: 'EB Garamond', serif;
@@ -233,9 +228,6 @@ header p {
 .volume {
 	margin-left: auto;
 	cursor: pointer;
-}
-.title {
-	font-size: 12px;
 }
 .btn-return {
 	float: right;
