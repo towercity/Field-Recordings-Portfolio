@@ -130,5 +130,103 @@
 				"trackLength": "43:32"
       }
     ]
+  },
+	{
+		"title": "translations",
+		"class": "translations",
+		"cover": "images/screen04.jpg",
+		"descShort": "<p>A collection of covers, remixes, reimaginings, and remasters of popular music adjecent songs. Some are remixes of songs I've written, some are remixes I've made, some are covers, and a few are entirely new original songs, not to mention the live improvastions with strangers, of which there are surprisngly three.</p>",
+		"tracks": [
+			{
+				"name": "Dreams by The Cranberries (from \"10 Slightly Altered Pop Songs\")",
+				"url": "audio/translations/01.ogg",
+				"trackLength": "6:07"
+      },
+			{
+				"name": "california dream (remaster)",
+				"url": "audio/translations/02.ogg",
+				"trackLength": "1:11"
+      },
+			{
+				"name": "parasite",
+				"url": "audio/translations/03.ogg",
+				"trackLength": "4:30"
+      },
+			{
+				"name": "road to tallahassee, part i",
+				"url": "audio/translations/04.ogg",
+				"trackLength": "4:00"
+      },
+			{
+				"name": "smothered in hugs (guided by voices cover)",
+				"url": "audio/translations/05.ogg",
+				"trackLength": "3:08"
+      },
+			{
+				"name": "parasite (interlude)",
+				"url": "audio/translations/06.ogg",
+				"trackLength": "1:05"
+      },
+			{
+				"name": "screaming the words along to my classmate's essays",
+				"url": "audio/translations/07.ogg",
+				"trackLength": "0:52"
+      },
+			{
+				"name": "Necrophobia (Jun Yahn remix of \"I dont wanna die\")",
+				"url": "audio/translations/08.ogg",
+				"trackLength": "8:00"
+      },
+			{
+				"name": "teaching a girl to play smo grugana by the integration statue",
+				"url": "audio/translations/09.ogg",
+				"trackLength": "0:40"
+      },
+			{
+				"name": "upper peninsula (sufjan stevens cover)",
+				"url": "audio/translations/10.ogg",
+				"trackLength": "2:43"
+      },
+			{
+				"name": "all yr songs (diamond rings cover)",
+				"url": "audio/translations/11.ogg",
+				"trackLength": "2:13"
+      },
+			{
+				"name": "when the music fades (remaster)",
+				"url": "audio/translations/12.ogg",
+				"trackLength": "1:18"
+      },
+			{
+				"name": "music therapy major plays 'a dream is a wish your heart makes' on landis green under a grouping of trees while the wind blows furiously into the tape mic",
+				"url": "audio/translations/13.ogg",
+				"trackLength": "1:35"
+      },
+			{
+				"name": "dont u know this could be you (smash mouth remix)",
+				"url": "audio/translations/14.ogg",
+				"trackLength": "1:15"
+      },
+			{
+				"name": "dont break roberts heart",
+				"url": "audio/translations/15.ogg",
+				"trackLength": "2:20"
+      },
+			{
+				"name": "when yr close 2 me (phil collins remix)",
+				"url": "audio/translations/16.ogg",
+				"trackLength": "6:41"
+      },
+			{
+				"name": "playing blues along with music majors on landis green",
+				"url": "audio/translations/17.ogg",
+				"trackLength": "4:07"
+      },
+			{
+				"name": "goddamn the sun",
+				"url": "audio/translations/18.ogg",
+				"trackLength": "0:21"
+      }
+    ]
   }
 ]
