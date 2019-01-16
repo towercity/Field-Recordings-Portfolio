@@ -11,6 +11,7 @@
 
     $http.get('json/playlist.json').then(function(data) {
       self.playlist = data.data;
+      console.log(self.playlist);
 
       // Iterates through albums and adds the long desc html to the page
       self.playlist.forEach(function(album) {
