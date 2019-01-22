@@ -233,3 +233,7 @@ header p {
 	float: right;
 	color: #747704;
 }
+
+.desc-holder {
+	padding-right: 10px;
+}
