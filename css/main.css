@@ -141,7 +141,7 @@ header p {
 
 .music-holder {
 	float: left;
-	padding: 0 10px 0 0;
+	padding: 0 10px 10px 10px;
 	width: 60%;
 	min-width: 260px;
 	max-width: 416px;
