@@ -41,6 +41,10 @@ li {
 	color: #999;
 }
 
+.clear-both {
+	clear: both;
+}
+
 /* Flex-box grid setup */
 
 .container {

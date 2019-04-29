@@ -10,7 +10,11 @@
           <div class="playlist">
             <img ng-src="{{album.cover}}" alt="{{album.title}} album cover">
             <ol class="song-list">
-              <li ng-repeat="track in album.tracks" ng-click="data.initAudio(album, $index)"><span class="song-left">{{$index + 1}}: {{track.name}}<span class="song-right">{{track.trackLength}}</span></span></li>
+              <li ng-repeat="track in album.tracks" ng-click="data.initAudio(album, $index)">
+                <span class="song-left">{{$index + 1}}: {{track.name}}</span>
+                <span class="song-right">{{track.trackLength}}</span>
+                <span class="clear-both"></span>
+              </li>
             </ol>
           </div>
 
